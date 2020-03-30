@@ -16,7 +16,7 @@ public class HelloServerInitializer extends ChannelInitializer<SocketChannel> {
         //通过管道添加handle  由netty提供的助手类 用于请求处理的编解码工作
         pipeline.addLast("httpServerCodec",new HttpServerCodec());
 
-        //ti添加自定义拦截器
+        //ti添加自定义拦截器..
         pipeline.addLast("customHandler", null);
 
     }
